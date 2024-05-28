@@ -1,0 +1,76 @@
+html {
+  margin: 0px;
+  height: 100%;
+  background-color: #D7E8F2;
+  overflow: hidden;
+  font-family: "Times New Roman", Times, serif;
+  cursor: default;
+}
+
+#topbar {
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 64px;
+  margin-right: 64px;
+}
+
+#topbar h1, #home {
+  font-size: 32px;
+  color: #2A2A2A;
+}
+
+#colorchoice, #home {
+  text-decoration: none;
+}
+
+#colorchoice:hover, #home:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#home:visited {
+  text-decoration: none;
+}
+
+
+
+#content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  left: -27.5px;
+  top: 110px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2px;
+}
+
+.row div{
+  transform: rotate(90deg);
+}
+
+.hexagon {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+}
+
+.hexagon img {
+  max-height: 100%;
+  padding: 3.5px;
+  cursor: pointer;
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
